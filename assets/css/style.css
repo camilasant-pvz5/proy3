@@ -5,8 +5,8 @@ display:inline-block;
 flex-direction: column; 
 justify-content: center;
 text-align: center;
-padding: 5px
-}
+padding: 5px;
+ }
 .principal {grid-area: principal;
 justify-content: center;
 display: flex;}
@@ -137,5 +137,11 @@ button {
  
 }
 
-.final {padding: 10px;
-margin-top: 10px;}
+
+
+.pie {  display: flex;
+  grid-template-rows: 60px 1fr 40px;}
+
+  .fa-brandsfa-square-instagram {display:flex;
+  justify-content: space-around;
+  margin-right: 10px}
