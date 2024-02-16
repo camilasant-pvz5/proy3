@@ -11,24 +11,23 @@ padding: 5px;
 justify-content: center;
 display: flex;}
 .filtros {grid-area: filtros;
-background-color: rgb(161, 192, 245);
+background-color: #A027A8;
 display: flex;
 flex-direction: row;
 justify-content: center;
 padding: 10px;
-font-family: roboto;
-color: aliceblue;}
+font-family: lato;
+color: rgb(255, 255, 255);}
 .barraNav {grid-area: navegacion; 
 background-color: rgb(205, 166, 241);
 display: flex;
 flex-direction: row;
 justify-content: space-around;
 padding: 10px;
+font-family: lato;
 }
 
-.centrar {display: flex;
-justify-content: center;
-align-items: center;}
+
 
 
 .grid {display: grid ;
@@ -61,8 +60,6 @@ align-items: center;}
     flex-direction: column;
   
   }
-
-
     .gridprincipal{grid-template-columns: 1fr 1fr 1fr 1fr;}
 
 
@@ -77,17 +74,26 @@ height: 430px;
 border-radius: 5px;
 border: 1px solid black;
 justify-content: center;
-align-items: center;}
+align-items: center;
+background-color:#F1F0F5;}
 
 .card img {
   width: 280px;
 height: 280px;
 border-radius: 8%; 
 padding: 10px;
+filter: drop-shadow(30 px 10 px 4px #AC01FF)
+;border-radius: 0%;
+transform: scale(1);
+transition: all 1s ease;
 }
 
+.card img:hover {filter: drop-shadow(0 -3mm 4mm #AC01FF);
+border-radius: 10%;
+transform: scale(1.5);}
+
 button {
-  background-color: #EB85BB; 
+  background-color: #8C4D86; 
   border: none; 
   border-radius: 5px;
   color: rgb(255, 255, 255); 
@@ -99,14 +105,16 @@ button {
   margin: 4px 2px; 
   cursor: pointer; 
   width: 100%;
+  font-family: lato;
 
-  
 }
+
+button:hover { background-color: #A027A8}
 
 .card p {
   margin: 15px 0; 
   text-align: center;
-  font-family: roboto;
+  font-family: montserrat;
   font-size: 13px;
 
 }
@@ -127,7 +135,7 @@ button {
   padding: 8px 16px;
   margin: 0 5px;
   background-color: #f2f2f2;
-  color: #e06dfa;
+  color: #8C4D86;
   text-decoration: none;
   border-radius: 4px;
 }
@@ -139,8 +147,9 @@ button {
 
 
 
-.pie {  display: flex;
-  grid-template-rows: 60px 1fr 40px;}
+.pie { display: flex;
+  grid-template-rows: 60px 1fr 40px;
+font-family: lato;}
 
   .fa-brandsfa-square-instagram {display:flex;
   justify-content: space-around;
